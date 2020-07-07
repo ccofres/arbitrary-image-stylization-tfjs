@@ -15,25 +15,25 @@ limitations under the License.
 <html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91864013-5"></script>
+<!--    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91864013-5"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-91864013-5');
-    </script>
+    </script> -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="twitter:card" content="summary" />
+<!--    <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@ReiiYoda" />
     <meta name="twitter:title" content="Arbitrary Style Transfer with TF.js" />
     <meta name="twitter:description" content="Paint yourself in the style of any painting, right in the browser." />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/reiinakano/arbitrary-image-stylization-tfjs/master/readme_img/stylize.jpg" />
-
+-->
     <title>Arbitrary Style Transfer in the Browser</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,14 +65,16 @@ limitations under the License.
   This site may have problems functioning on mobile devices. 
   Don't worry, you can still read the description below!
 </div>
+<!-- Estos son el nombre de los 2 tab: stylize an image/combine two styles-->
 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="stylize-tab" data-toggle="tab" href="#stylize" role="tab" aria-controls="stylize" aria-selected="true">Stylize an image</a>
+    <a class="nav-link active" id="stylize-tab" data-toggle="tab" href="#stylize" role="tab" aria-controls="stylize" aria-selected="true">Stylize an image TESTING</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="combine-tab" data-toggle="tab" href="#combine" role="tab" aria-controls="combine" aria-selected="false">Combine two styles</a>
   </li>
 </ul>
+<!--                                                                      -->
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="stylize" role="tabpanel" aria-labelledby="stylize-tab">
       <div class="container">
@@ -250,6 +252,7 @@ limitations under the License.
   </div>
 </div>
 
+<!-- ESTOS SON LOS BOTONES DE SELECCION DE MODELO.... BUSCAR COMO SE CARGAN-->
 <div class="container">
   <div class="row my-4">
     <div class="col-md-3 offset-md-3">
@@ -262,17 +265,19 @@ limitations under the License.
         <select disabled id="model-select-transformer" class="centered custom-select">
           <option value="separable" selected="selected">[Fast] Separable_conv2d transformer (2.4MB)</option>
           <option value="original">[High quality] Original transformer model (7.9MB)</option>
+          <option>asdasdasdasd</option>
         </select>
     </div>
   </div>
 </div>
 
+<!--
 <canvas id="hidden-canvas" style="display: none"></canvas>
 <div class="modal fade" id="cam-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Take a snapshot!</h5>
+        <h5 class="modal-title" id="exampleModalLabel">HOLATake a snapshot!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -287,14 +292,15 @@ limitations under the License.
     </div>
   </div>
 </div>
+-->
 
 <div class="container-fluid pt-5" style="background-color: #f5f5f5;">
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-md-4 offset-md-4">
       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Paint a photograph in the style of anything, right in your browser! Try out arbitrary style transfer! #CreativeAI #creativecoding #generative" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-  </div>
-  <div class="row pt-5">
+  </div> -->
+<!-- <div class="row pt-5">
     <div class="col-md-4 offset-md-4">
         <h5>
           What is this?
@@ -406,7 +412,8 @@ limitations under the License.
         </p>
     </div>
   </div>
-  <div class="row pt-5">
+-->
+<!--  <div class="row pt-5">
     <div class="col-md-4 offset-md-4">
         <h5>
           Is the code open source?
@@ -416,6 +423,7 @@ limitations under the License.
         </p>
     </div>
   </div>
+-->
   <div class="row pt-5">
     <div class="col-md-4 offset-md-4">
         <h5>
