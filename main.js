@@ -116,6 +116,9 @@ class Main {
     return this.separableTransformNet;
   }
 
+  /**
+   * TOMA FOTO CON CAMARA WEB
+   */
   initalizeWebcamVariables() {
     this.camModal = $('#cam-modal');
 
