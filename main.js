@@ -78,6 +78,9 @@ class Main {
     });
   }
 
+  /**
+   * Funciones asincronas para cargar modelos
+   */
   async loadMobileNetStyleModel() {
     if (!this.mobileStyleNet) {
       this.mobileStyleNet = await tf.loadGraphModel(
